@@ -1,0 +1,10 @@
+{
+  "name": "PySpark Dev Container",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+
+  "postCreateCommand": "pip install pyspark-stubs --no-deps || true",
+  "remoteUser": "root"
+}
